@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JS 必修篇最終關卡任務_todolist 待辦事項</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODO LIST</h1>
+      <div class="card input">
+        <input id='inputText'type="text" placeholder="請輸入待辦事項" class="txt"/>
+        <a id='addBtn' href="#" class="btn_add">+</a>
+      </div>
+      <div class="card card_list">
+        <ul class="tab" id="tab">
+          <li class="active" data-tab="all">全部</li>
+          <li data-tab="pending">待完成</li>
+          <li data-tab="solved">已完成</li>
+        </ul>
+        <div class="cart_content">
+          <ul class="list" id="todolist">
+            
+          </ul>
+          <div class="list_footer">
+            <p><span id="workNum">0</span> 個待完成項目</p>
+            <a href="#" id="deleteDone">清除已完成項目</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+  </html>
+  
